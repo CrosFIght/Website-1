@@ -1,13 +1,13 @@
 body {
     font-family: Arial,  sans-serif;
-    font-size: 11px;
+    font-size: 0.688rem;
     background-color: #f0f0f0;
     color: #333333;
     border: 5px solid blueviolet;
 }
 h1 {
     color: #00a800;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: Georgia, serif;
 }
 
@@ -15,7 +15,7 @@ h1 {
     color : blue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: lightblue;
-    border: 5px solid black;
+    border: 0.313rem solid black;
 }
 
 .div-1 {
@@ -25,5 +25,37 @@ h1 {
 }
 
 img {
-    border: 5px dotted black;
+    border: 0.313rem dotted black;
+}
+
+@keyframes color-change {
+    0% { color: blue; }
+
+    25% { color: red; }
+
+    50% { color: purple; }
+
+    75% { color: black; }
+
+    100% { color: blue; }
+  }
+
+  h1:hover {
+    animation: color-change 5s infinite;
+  }
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-2rem); }
+  }
+  .vert-move:hover {
+    animation: mover 1s infinite  alternate;
+  }  
+
+.pogoda{
+    border: 0.313rem dashed black;
+}
+
+.imgs{
+    text-align: center;
 }
